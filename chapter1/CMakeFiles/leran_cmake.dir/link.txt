@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/leran_cmake.dir/cpp_test.cpp.o -o leran_cmake 
