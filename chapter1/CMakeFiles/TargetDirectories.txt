@@ -1,0 +1,3 @@
+/home/lyd/chapter1/CMakeFiles/leran_cmake.dir
+/home/lyd/chapter1/CMakeFiles/edit_cache.dir
+/home/lyd/chapter1/CMakeFiles/rebuild_cache.dir
