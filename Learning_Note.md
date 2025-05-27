@@ -62,3 +62,8 @@ add_executable(Cmake_exe_Name cpp_text.cpp)
 # 2.3.1 在功能包中编写Cpp节点
 ## 会多一个CMakeLists.txt的文件
 ## $ldd cpp_node 查看某节点的依赖关系
+
+# 2.4 工作空间
+一个完整的机器人项目往往又多个不同的功能模块组成，所以需要对多个功能包进行组合
+## 创建工作空间 $mkdir -p chapter_ws/src
+## 工作空间可以单独构建 $colcon build --packages-select demo_cpp_pkg
