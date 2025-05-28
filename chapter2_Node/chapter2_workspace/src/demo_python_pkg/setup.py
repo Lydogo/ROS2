@@ -20,7 +20,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'python_node = demo_python_pkg.python_node:main' #生成一个名为pytho_node的可执行文件，后面是路径
+            'python_node = demo_python_pkg.python_node:main',#生成一个名为pytho_node的可执行文件，后面是路径
+            'class_node = demo_python_pkg.class_node:main',
+            'inheritance_node = demo_python_pkg.inheritance_node:main',
         ],
     },
 )

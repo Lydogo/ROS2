@@ -1,3 +1,5 @@
 [console_scripts]
+class_node = demo_python_pkg.class_node:main
+inheritance_node = demo_python_pkg.inheritance_node:main
 python_node = demo_python_pkg.python_node:main
 

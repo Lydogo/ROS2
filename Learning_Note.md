@@ -56,7 +56,8 @@ add_executable(Cmake_exe_Name cpp_text.cpp)
 # 2.2 在功能包中编写Python节点
 ## $ros2 pkg create --build-type ament_cmake --license Apache-2.0 demo_python_pkg
 ## $colcon build
-## 添加环境变量：source install/setup.bash
+## 添加环境变量：$source install/setup.bash
+## 运行：$ros2 run name
 
 
 # 2.3.1 在功能包中编写Cpp节点
