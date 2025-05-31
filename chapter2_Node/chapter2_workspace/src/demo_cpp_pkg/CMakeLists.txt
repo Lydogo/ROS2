@@ -15,6 +15,8 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED) 
 
 add_executable(cpp_node src/cpp_node.cpp)
+add_executable(person_node src/class_node.cpp)
+
 
 # # 给可执行文件包含头文件
 # target_include_directories(cpp_node PUBLIC ${rclcpp_INCLUDE_DIRS})
@@ -22,10 +24,11 @@ add_executable(cpp_node src/cpp_node.cpp)
 # target_link_libraries(cpp_node ${rclcpp_LIBRARIES})
 
 ament_target_dependencies(cpp_node rclcpp)
+ament_target_dependencies(person_node rclcpp)
 
 
 install(TARGETS
-  cpp_node
+  cpp_node  person_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
