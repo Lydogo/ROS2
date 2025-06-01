@@ -36,13 +36,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 30,
+				"line" : 35,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 47,
+				"line" : 52,
 				"parent" : 0
 			},
 			{
@@ -232,7 +232,7 @@
 				"cpp_node"
 			],
 			"targetId" : "cpp_node::@6890427a1f51a3e7e1df",
-			"targetIndex" : 0,
+			"targetIndex" : 1,
 			"type" : "target"
 		},
 		{
@@ -244,7 +244,55 @@
 				"person_node"
 			],
 			"targetId" : "person_node::@6890427a1f51a3e7e1df",
-			"targetIndex" : 2,
+			"targetIndex" : 5,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/demo_cpp_pkg",
+			"paths" : 
+			[
+				"auto_test"
+			],
+			"targetId" : "auto_test::@6890427a1f51a3e7e1df",
+			"targetIndex" : 0,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/demo_cpp_pkg",
+			"paths" : 
+			[
+				"shared_ptr_test"
+			],
+			"targetId" : "shared_ptr_test::@6890427a1f51a3e7e1df",
+			"targetIndex" : 6,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/demo_cpp_pkg",
+			"paths" : 
+			[
+				"lambda_test"
+			],
+			"targetId" : "lambda_test::@6890427a1f51a3e7e1df",
+			"targetIndex" : 4,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/demo_cpp_pkg",
+			"paths" : 
+			[
+				"funcational_test"
+			],
+			"targetId" : "funcational_test::@6890427a1f51a3e7e1df",
+			"targetIndex" : 3,
 			"type" : "target"
 		},
 		{

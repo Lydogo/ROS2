@@ -16,6 +16,10 @@ find_package(rclcpp REQUIRED)
 
 add_executable(cpp_node src/cpp_node.cpp)
 add_executable(person_node src/class_node.cpp)
+add_executable(auto_test src/auto_test.cpp)
+add_executable(shared_ptr_test src/shared_ptr_test.cpp)
+add_executable(lambda_test src/lambda_test.cpp)
+add_executable(funcational_test src/funcational_test.cpp)
 
 
 # # 给可执行文件包含头文件
@@ -25,10 +29,11 @@ add_executable(person_node src/class_node.cpp)
 
 ament_target_dependencies(cpp_node rclcpp)
 ament_target_dependencies(person_node rclcpp)
+ament_target_dependencies(auto_test rclcpp)
 
 
 install(TARGETS
-  cpp_node  person_node
+  cpp_node  person_node  auto_test  shared_ptr_test lambda_test funcational_test
   DESTINATION lib/${PROJECT_NAME}
 )
 

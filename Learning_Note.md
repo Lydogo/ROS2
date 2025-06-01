@@ -68,3 +68,42 @@ add_executable(Cmake_exe_Name cpp_text.cpp)
 一个完整的机器人项目往往又多个不同的功能模块组成，所以需要对多个功能包进行组合
 ## 创建工作空间 $mkdir -p chapter_ws/src
 ## 工作空间可以单独构建 $colcon build --packages-select demo_cpp_pkg
+
+# 2.5.2 C++新特性
+## 自动类型推导
+```C++
+auto node=
+std::make_shared<rclcpp::Npde>
+("cpp_node")
+```
+node 是自动推导类型
+
+## 智能指针
+### 共享指针：用于解决占有内存却没有使用的问题 会记录使用某块内存的资源数量
+
+## Lambda函数：换个语法写的函数
+```C++
+[capture list](parameters)->return_type
+{function body}
+```
+## 自由函数
+```C++
+void save_with_free_fun(const std::string &file_name)
+{
+    std::cout<<"调用了自由函数，保存："<<file_name<<std::endl;
+}
+```
+## 成员函数
+```C++
+class FileSave
+{
+public:
+    void save_with_mumber_fun(const std::string &file_name)
+    {
+        std::cout<<"调用了成员函数，保存："<<file_name<<std::endl;
+    }
+}
+
+```
+
+## 函数包装器：统一上述3种函数的调用方式

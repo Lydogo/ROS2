@@ -223,6 +223,82 @@ person_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/person_node.dir/build.make CMakeFiles/person_node.dir/build
 .PHONY : person_node/fast
 
+#=============================================================================
+# Target rules for targets named auto_test
+
+# Build rule for target.
+auto_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 auto_test
+.PHONY : auto_test
+
+# fast build rule for target.
+auto_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_test.dir/build.make CMakeFiles/auto_test.dir/build
+.PHONY : auto_test/fast
+
+#=============================================================================
+# Target rules for targets named shared_ptr_test
+
+# Build rule for target.
+shared_ptr_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 shared_ptr_test
+.PHONY : shared_ptr_test
+
+# fast build rule for target.
+shared_ptr_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_ptr_test.dir/build.make CMakeFiles/shared_ptr_test.dir/build
+.PHONY : shared_ptr_test/fast
+
+#=============================================================================
+# Target rules for targets named lambda_test
+
+# Build rule for target.
+lambda_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lambda_test
+.PHONY : lambda_test
+
+# fast build rule for target.
+lambda_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lambda_test.dir/build.make CMakeFiles/lambda_test.dir/build
+.PHONY : lambda_test/fast
+
+#=============================================================================
+# Target rules for targets named funcational_test
+
+# Build rule for target.
+funcational_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 funcational_test
+.PHONY : funcational_test
+
+# fast build rule for target.
+funcational_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/funcational_test.dir/build.make CMakeFiles/funcational_test.dir/build
+.PHONY : funcational_test/fast
+
+src/auto_test.o: src/auto_test.cpp.o
+.PHONY : src/auto_test.o
+
+# target to build an object file
+src/auto_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_test.dir/build.make CMakeFiles/auto_test.dir/src/auto_test.cpp.o
+.PHONY : src/auto_test.cpp.o
+
+src/auto_test.i: src/auto_test.cpp.i
+.PHONY : src/auto_test.i
+
+# target to preprocess a source file
+src/auto_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_test.dir/build.make CMakeFiles/auto_test.dir/src/auto_test.cpp.i
+.PHONY : src/auto_test.cpp.i
+
+src/auto_test.s: src/auto_test.cpp.s
+.PHONY : src/auto_test.s
+
+# target to generate assembly for a file
+src/auto_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto_test.dir/build.make CMakeFiles/auto_test.dir/src/auto_test.cpp.s
+.PHONY : src/auto_test.cpp.s
+
 src/class_node.o: src/class_node.cpp.o
 .PHONY : src/class_node.o
 
@@ -271,6 +347,78 @@ src/cpp_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_node.dir/build.make CMakeFiles/cpp_node.dir/src/cpp_node.cpp.s
 .PHONY : src/cpp_node.cpp.s
 
+src/funcational_test.o: src/funcational_test.cpp.o
+.PHONY : src/funcational_test.o
+
+# target to build an object file
+src/funcational_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/funcational_test.dir/build.make CMakeFiles/funcational_test.dir/src/funcational_test.cpp.o
+.PHONY : src/funcational_test.cpp.o
+
+src/funcational_test.i: src/funcational_test.cpp.i
+.PHONY : src/funcational_test.i
+
+# target to preprocess a source file
+src/funcational_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/funcational_test.dir/build.make CMakeFiles/funcational_test.dir/src/funcational_test.cpp.i
+.PHONY : src/funcational_test.cpp.i
+
+src/funcational_test.s: src/funcational_test.cpp.s
+.PHONY : src/funcational_test.s
+
+# target to generate assembly for a file
+src/funcational_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/funcational_test.dir/build.make CMakeFiles/funcational_test.dir/src/funcational_test.cpp.s
+.PHONY : src/funcational_test.cpp.s
+
+src/lambda_test.o: src/lambda_test.cpp.o
+.PHONY : src/lambda_test.o
+
+# target to build an object file
+src/lambda_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lambda_test.dir/build.make CMakeFiles/lambda_test.dir/src/lambda_test.cpp.o
+.PHONY : src/lambda_test.cpp.o
+
+src/lambda_test.i: src/lambda_test.cpp.i
+.PHONY : src/lambda_test.i
+
+# target to preprocess a source file
+src/lambda_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lambda_test.dir/build.make CMakeFiles/lambda_test.dir/src/lambda_test.cpp.i
+.PHONY : src/lambda_test.cpp.i
+
+src/lambda_test.s: src/lambda_test.cpp.s
+.PHONY : src/lambda_test.s
+
+# target to generate assembly for a file
+src/lambda_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lambda_test.dir/build.make CMakeFiles/lambda_test.dir/src/lambda_test.cpp.s
+.PHONY : src/lambda_test.cpp.s
+
+src/shared_ptr_test.o: src/shared_ptr_test.cpp.o
+.PHONY : src/shared_ptr_test.o
+
+# target to build an object file
+src/shared_ptr_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_ptr_test.dir/build.make CMakeFiles/shared_ptr_test.dir/src/shared_ptr_test.cpp.o
+.PHONY : src/shared_ptr_test.cpp.o
+
+src/shared_ptr_test.i: src/shared_ptr_test.cpp.i
+.PHONY : src/shared_ptr_test.i
+
+# target to preprocess a source file
+src/shared_ptr_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_ptr_test.dir/build.make CMakeFiles/shared_ptr_test.dir/src/shared_ptr_test.cpp.i
+.PHONY : src/shared_ptr_test.cpp.i
+
+src/shared_ptr_test.s: src/shared_ptr_test.cpp.s
+.PHONY : src/shared_ptr_test.s
+
+# target to generate assembly for a file
+src/shared_ptr_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_ptr_test.dir/build.make CMakeFiles/shared_ptr_test.dir/src/shared_ptr_test.cpp.s
+.PHONY : src/shared_ptr_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -286,14 +434,30 @@ help:
 	@echo "... test"
 	@echo "... demo_cpp_pkg_uninstall"
 	@echo "... uninstall"
+	@echo "... auto_test"
 	@echo "... cpp_node"
+	@echo "... funcational_test"
+	@echo "... lambda_test"
 	@echo "... person_node"
+	@echo "... shared_ptr_test"
+	@echo "... src/auto_test.o"
+	@echo "... src/auto_test.i"
+	@echo "... src/auto_test.s"
 	@echo "... src/class_node.o"
 	@echo "... src/class_node.i"
 	@echo "... src/class_node.s"
 	@echo "... src/cpp_node.o"
 	@echo "... src/cpp_node.i"
 	@echo "... src/cpp_node.s"
+	@echo "... src/funcational_test.o"
+	@echo "... src/funcational_test.i"
+	@echo "... src/funcational_test.s"
+	@echo "... src/lambda_test.o"
+	@echo "... src/lambda_test.i"
+	@echo "... src/lambda_test.s"
+	@echo "... src/shared_ptr_test.o"
+	@echo "... src/shared_ptr_test.i"
+	@echo "... src/shared_ptr_test.s"
 .PHONY : help
 
 

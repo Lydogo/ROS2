@@ -1,5 +1,9 @@
 /home/lyd/ROS2/chapter2_Node/chapter2_workspace/install/demo_cpp_pkg/lib/demo_cpp_pkg/cpp_node
 /home/lyd/ROS2/chapter2_Node/chapter2_workspace/install/demo_cpp_pkg/lib/demo_cpp_pkg/person_node
+/home/lyd/ROS2/chapter2_Node/chapter2_workspace/install/demo_cpp_pkg/lib/demo_cpp_pkg/auto_test
+/home/lyd/ROS2/chapter2_Node/chapter2_workspace/install/demo_cpp_pkg/lib/demo_cpp_pkg/shared_ptr_test
+/home/lyd/ROS2/chapter2_Node/chapter2_workspace/install/demo_cpp_pkg/lib/demo_cpp_pkg/lambda_test
+/home/lyd/ROS2/chapter2_Node/chapter2_workspace/install/demo_cpp_pkg/lib/demo_cpp_pkg/funcational_test
 /home/lyd/ROS2/chapter2_Node/chapter2_workspace/install/demo_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/demo_cpp_pkg
 /home/lyd/ROS2/chapter2_Node/chapter2_workspace/install/demo_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/demo_cpp_pkg
 /home/lyd/ROS2/chapter2_Node/chapter2_workspace/install/demo_cpp_pkg/share/demo_cpp_pkg/environment/ament_prefix_path.sh

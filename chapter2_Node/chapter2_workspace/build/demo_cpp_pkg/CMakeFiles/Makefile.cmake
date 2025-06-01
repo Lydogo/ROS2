@@ -644,4 +644,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/demo_cpp_pkg_uninstall.dir/DependInfo.cmake"
   "CMakeFiles/cpp_node.dir/DependInfo.cmake"
   "CMakeFiles/person_node.dir/DependInfo.cmake"
+  "CMakeFiles/auto_test.dir/DependInfo.cmake"
+  "CMakeFiles/shared_ptr_test.dir/DependInfo.cmake"
+  "CMakeFiles/lambda_test.dir/DependInfo.cmake"
+  "CMakeFiles/funcational_test.dir/DependInfo.cmake"
   )

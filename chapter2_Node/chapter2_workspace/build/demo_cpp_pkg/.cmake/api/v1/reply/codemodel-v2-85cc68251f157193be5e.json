@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-30b42a674106ebf56f5a.json",
+					"jsonFile" : "directory-.-b7fb6ac1b3cd9315d709.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.12"
@@ -19,7 +19,11 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4,
+						5,
+						6,
+						7
 					]
 				}
 			],
@@ -37,7 +41,11 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4,
+						5,
+						6,
+						7
 					]
 				}
 			],
@@ -45,8 +53,15 @@
 			[
 				{
 					"directoryIndex" : 0,
+					"id" : "auto_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-auto_test-8471df7e2cf1e4077aa6.json",
+					"name" : "auto_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "cpp_node::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-cpp_node-1e37d520e0d9dd6b35ce.json",
+					"jsonFile" : "target-cpp_node-e6f3155029bb1adb8314.json",
 					"name" : "cpp_node",
 					"projectIndex" : 0
 				},
@@ -59,9 +74,30 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "funcational_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-funcational_test-9257a1e0e2654f69e4f1.json",
+					"name" : "funcational_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lambda_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lambda_test-6a59357802df1557264a.json",
+					"name" : "lambda_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "person_node::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-person_node-b4ebdbca108eb9067a3e.json",
+					"jsonFile" : "target-person_node-1b4522bab54ae0f6c231.json",
 					"name" : "person_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "shared_ptr_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-shared_ptr_test-ec3eca7c09b1cae7d24c.json",
+					"name" : "shared_ptr_test",
 					"projectIndex" : 0
 				},
 				{
