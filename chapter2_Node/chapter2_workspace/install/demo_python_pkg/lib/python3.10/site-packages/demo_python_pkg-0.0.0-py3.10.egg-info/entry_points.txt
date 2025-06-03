@@ -2,4 +2,5 @@
 class_node = demo_python_pkg.class_node:main
 inheritance_node = demo_python_pkg.inheritance_node:main
 python_node = demo_python_pkg.python_node:main
+thread_test = demo_python_pkg.thread_test:main
 

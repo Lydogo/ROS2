@@ -36,13 +36,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 35,
+				"line" : 38,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 52,
+				"line" : 55,
 				"parent" : 0
 			},
 			{
@@ -293,6 +293,18 @@
 			],
 			"targetId" : "funcational_test::@6890427a1f51a3e7e1df",
 			"targetIndex" : 3,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/demo_cpp_pkg",
+			"paths" : 
+			[
+				"thread_test"
+			],
+			"targetId" : "thread_test::@6890427a1f51a3e7e1df",
+			"targetIndex" : 7,
 			"type" : "target"
 		},
 		{

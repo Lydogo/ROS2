@@ -275,6 +275,19 @@ funcational_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/funcational_test.dir/build.make CMakeFiles/funcational_test.dir/build
 .PHONY : funcational_test/fast
 
+#=============================================================================
+# Target rules for targets named thread_test
+
+# Build rule for target.
+thread_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 thread_test
+.PHONY : thread_test
+
+# fast build rule for target.
+thread_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_test.dir/build.make CMakeFiles/thread_test.dir/build
+.PHONY : thread_test/fast
+
 src/auto_test.o: src/auto_test.cpp.o
 .PHONY : src/auto_test.o
 
@@ -419,6 +432,30 @@ src/shared_ptr_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_ptr_test.dir/build.make CMakeFiles/shared_ptr_test.dir/src/shared_ptr_test.cpp.s
 .PHONY : src/shared_ptr_test.cpp.s
 
+src/thread_test.o: src/thread_test.cpp.o
+.PHONY : src/thread_test.o
+
+# target to build an object file
+src/thread_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_test.dir/build.make CMakeFiles/thread_test.dir/src/thread_test.cpp.o
+.PHONY : src/thread_test.cpp.o
+
+src/thread_test.i: src/thread_test.cpp.i
+.PHONY : src/thread_test.i
+
+# target to preprocess a source file
+src/thread_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_test.dir/build.make CMakeFiles/thread_test.dir/src/thread_test.cpp.i
+.PHONY : src/thread_test.cpp.i
+
+src/thread_test.s: src/thread_test.cpp.s
+.PHONY : src/thread_test.s
+
+# target to generate assembly for a file
+src/thread_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread_test.dir/build.make CMakeFiles/thread_test.dir/src/thread_test.cpp.s
+.PHONY : src/thread_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -440,6 +477,7 @@ help:
 	@echo "... lambda_test"
 	@echo "... person_node"
 	@echo "... shared_ptr_test"
+	@echo "... thread_test"
 	@echo "... src/auto_test.o"
 	@echo "... src/auto_test.i"
 	@echo "... src/auto_test.s"
@@ -458,6 +496,9 @@ help:
 	@echo "... src/shared_ptr_test.o"
 	@echo "... src/shared_ptr_test.i"
 	@echo "... src/shared_ptr_test.s"
+	@echo "... src/thread_test.o"
+	@echo "... src/thread_test.i"
+	@echo "... src/thread_test.s"
 .PHONY : help
 
 

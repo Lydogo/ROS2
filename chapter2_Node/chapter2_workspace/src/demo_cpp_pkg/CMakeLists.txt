@@ -14,12 +14,15 @@ find_package(ament_cmake REQUIRED)
 # 查找rclcpp头文件和库文件的路径
 find_package(rclcpp REQUIRED) 
 
+include_directories(include)
+
 add_executable(cpp_node src/cpp_node.cpp)
 add_executable(person_node src/class_node.cpp)
 add_executable(auto_test src/auto_test.cpp)
 add_executable(shared_ptr_test src/shared_ptr_test.cpp)
 add_executable(lambda_test src/lambda_test.cpp)
 add_executable(funcational_test src/funcational_test.cpp)
+add_executable(thread_test src/thread_test.cpp)
 
 
 # # 给可执行文件包含头文件
@@ -33,7 +36,7 @@ ament_target_dependencies(auto_test rclcpp)
 
 
 install(TARGETS
-  cpp_node  person_node  auto_test  shared_ptr_test lambda_test funcational_test
+  cpp_node  person_node  auto_test  shared_ptr_test lambda_test funcational_test  thread_test
   DESTINATION lib/${PROJECT_NAME}
 )
 

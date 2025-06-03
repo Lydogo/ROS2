@@ -23,6 +23,9 @@ setup(
             'python_node = demo_python_pkg.python_node:main',#生成一个名为pytho_node的可执行文件，后面是路径
             'class_node = demo_python_pkg.class_node:main',
             'inheritance_node = demo_python_pkg.inheritance_node:main',
+            'thread_test = demo_python_pkg.thread_test:main',
+
+            
         ],
     },
 )
