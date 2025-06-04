@@ -109,3 +109,18 @@ public:
 ## 函数包装器：统一上述3种函数的调用方式
 
 # 2.5.3多线程与回调函数
+
+
+# 3.1 话题
+
+## 查看话题消息接口
+$ros2 topic info /turtle1/cmd_vel
+
+## 消息接口详细定义
+$ros2 interface show geometry_msgs/msg/Twist
+
+## 发布
+$ros2 topic pub /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.5, y: 0.0} , angular: {z: 0.0}}"
+pub:表示发布
+/turtle1/cmd_vel：话题名字
+geometry_msgs/msg/Twist：消息接口
