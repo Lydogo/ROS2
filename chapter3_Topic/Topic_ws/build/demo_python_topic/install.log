@@ -1,9 +1,11 @@
 /home/lyd/ROS2/chapter3_Topic/Topic_ws/install/demo_python_topic/lib/python3.10/site-packages/demo_python_topic/__init__.py
 /home/lyd/ROS2/chapter3_Topic/Topic_ws/install/demo_python_topic/lib/python3.10/site-packages/demo_python_topic/moban.py
 /home/lyd/ROS2/chapter3_Topic/Topic_ws/install/demo_python_topic/lib/python3.10/site-packages/demo_python_topic/novel_pub_node.py
+/home/lyd/ROS2/chapter3_Topic/Topic_ws/install/demo_python_topic/lib/python3.10/site-packages/demo_python_topic/novel_sub_node.py
 /home/lyd/ROS2/chapter3_Topic/Topic_ws/install/demo_python_topic/lib/python3.10/site-packages/demo_python_topic/__pycache__/__init__.cpython-310.pyc
 /home/lyd/ROS2/chapter3_Topic/Topic_ws/install/demo_python_topic/lib/python3.10/site-packages/demo_python_topic/__pycache__/moban.cpython-310.pyc
 /home/lyd/ROS2/chapter3_Topic/Topic_ws/install/demo_python_topic/lib/python3.10/site-packages/demo_python_topic/__pycache__/novel_pub_node.cpython-310.pyc
+/home/lyd/ROS2/chapter3_Topic/Topic_ws/install/demo_python_topic/lib/python3.10/site-packages/demo_python_topic/__pycache__/novel_sub_node.cpython-310.pyc
 /home/lyd/ROS2/chapter3_Topic/Topic_ws/install/demo_python_topic/share/ament_index/resource_index/packages/demo_python_topic
 /home/lyd/ROS2/chapter3_Topic/Topic_ws/install/demo_python_topic/share/demo_python_topic/package.xml
 /home/lyd/ROS2/chapter3_Topic/Topic_ws/install/demo_python_topic/lib/python3.10/site-packages/demo_python_topic-0.0.0-py3.10.egg-info/entry_points.txt
@@ -14,3 +16,4 @@
 /home/lyd/ROS2/chapter3_Topic/Topic_ws/install/demo_python_topic/lib/python3.10/site-packages/demo_python_topic-0.0.0-py3.10.egg-info/top_level.txt
 /home/lyd/ROS2/chapter3_Topic/Topic_ws/install/demo_python_topic/lib/python3.10/site-packages/demo_python_topic-0.0.0-py3.10.egg-info/SOURCES.txt
 /home/lyd/ROS2/chapter3_Topic/Topic_ws/install/demo_python_topic/lib/demo_python_topic/novel_pub_node
+/home/lyd/ROS2/chapter3_Topic/Topic_ws/install/demo_python_topic/lib/demo_python_topic/novel_sub_node
