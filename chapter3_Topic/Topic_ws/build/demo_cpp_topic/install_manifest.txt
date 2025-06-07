@@ -1,4 +1,5 @@
 /home/lyd/ROS2/chapter3_Topic/Topic_ws/install/demo_cpp_topic/lib/demo_cpp_topic/turtle_circle
+/home/lyd/ROS2/chapter3_Topic/Topic_ws/install/demo_cpp_topic/lib/demo_cpp_topic/turtle_control
 /home/lyd/ROS2/chapter3_Topic/Topic_ws/install/demo_cpp_topic/share/ament_index/resource_index/package_run_dependencies/demo_cpp_topic
 /home/lyd/ROS2/chapter3_Topic/Topic_ws/install/demo_cpp_topic/share/ament_index/resource_index/parent_prefix_path/demo_cpp_topic
 /home/lyd/ROS2/chapter3_Topic/Topic_ws/install/demo_cpp_topic/share/demo_cpp_topic/environment/ament_prefix_path.sh
