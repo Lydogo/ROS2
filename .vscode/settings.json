@@ -2,6 +2,7 @@
     "cmake.sourceDirectory": "/home/lyd/ROS2/chapter1",
     "files.associations": {
         "iostream": "cpp",
-        "chrono": "cpp"
+        "chrono": "cpp",
+        "qstring": "cpp"
     }
 }

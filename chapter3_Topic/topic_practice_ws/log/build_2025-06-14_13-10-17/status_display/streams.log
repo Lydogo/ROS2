@@ -1,0 +1,29 @@
+[0.012s] Invoking command in '/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/build/status_display': CMAKE_PREFIX_PATH=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_interfaces:/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display:/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_publisher:/opt/ros/humble /usr/bin/cmake --build /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/build/status_display -- -j4 -l4
+[0.143s] [ 25%] [32mBuilding CXX object CMakeFiles/hello_qt.dir/src/hello_qt.cpp.o[0m
+[0.180s] [ 50%] [32mBuilding CXX object CMakeFiles/sys_status_display.dir/src/sys_status_display.cpp.o[0m
+[2.162s] [ 75%] [32m[1mLinking CXX executable hello_qt[0m
+[2.702s] [ 75%] Built target hello_qt
+[9.882s] [100%] [32m[1mLinking CXX executable sys_status_display[0m
+[10.718s] [100%] Built target sys_status_display
+[10.728s] Invoked command in '/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/build/status_display' returned '0': CMAKE_PREFIX_PATH=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_interfaces:/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display:/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_publisher:/opt/ros/humble /usr/bin/cmake --build /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/build/status_display -- -j4 -l4
+[10.729s] Invoking command in '/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/build/status_display': CMAKE_PREFIX_PATH=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_interfaces:/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display:/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_publisher:/opt/ros/humble /usr/bin/cmake --install /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/build/status_display
+[10.734s] -- Install configuration: ""
+[10.734s] -- Installing: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/lib/status_display/hello_qt
+[10.734s] -- Installing: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/lib/status_display/sys_status_display
+[10.737s] -- Set runtime path of "/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/lib/status_display/sys_status_display" to ""
+[10.737s] -- Up-to-date: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/ament_index/resource_index/package_run_dependencies/status_display
+[10.738s] -- Up-to-date: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/ament_index/resource_index/parent_prefix_path/status_display
+[10.738s] -- Up-to-date: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/status_display/environment/ament_prefix_path.sh
+[10.738s] -- Up-to-date: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/status_display/environment/ament_prefix_path.dsv
+[10.738s] -- Up-to-date: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/status_display/environment/path.sh
+[10.738s] -- Up-to-date: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/status_display/environment/path.dsv
+[10.738s] -- Up-to-date: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/status_display/local_setup.bash
+[10.739s] -- Up-to-date: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/status_display/local_setup.sh
+[10.739s] -- Up-to-date: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/status_display/local_setup.zsh
+[10.739s] -- Up-to-date: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/status_display/local_setup.dsv
+[10.739s] -- Installing: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/status_display/package.dsv
+[10.739s] -- Up-to-date: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/ament_index/resource_index/packages/status_display
+[10.739s] -- Up-to-date: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/status_display/cmake/status_displayConfig.cmake
+[10.739s] -- Up-to-date: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/status_display/cmake/status_displayConfig-version.cmake
+[10.739s] -- Up-to-date: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/status_display/package.xml
+[10.745s] Invoked command in '/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/build/status_display' returned '0': CMAKE_PREFIX_PATH=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_interfaces:/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display:/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_publisher:/opt/ros/humble /usr/bin/cmake --install /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/build/status_display

@@ -1,0 +1,73 @@
+[0.011s] Invoking command in '/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/build/status_display': AMENT_PREFIX_PATH=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/src/status_display -DCMAKE_INSTALL_PREFIX=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display
+[0.086s] -- The C compiler identification is GNU 11.4.0
+[0.145s] -- The CXX compiler identification is GNU 11.4.0
+[0.157s] -- Detecting C compiler ABI info
+[0.279s] -- Detecting C compiler ABI info - done
+[0.285s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.285s] -- Detecting C compile features
+[0.286s] -- Detecting C compile features - done
+[0.290s] -- Detecting CXX compiler ABI info
+[0.421s] -- Detecting CXX compiler ABI info - done
+[0.428s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.428s] -- Detecting CXX compile features
+[0.430s] -- Detecting CXX compile features - done
+[0.430s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.626s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.724s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.798s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.798s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.808s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.819s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.832s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.910s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.915s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.029s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.056s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.097s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.112s] -- Looking for pthread.h
+[1.203s] -- Looking for pthread.h - found
+[1.204s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.293s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.294s] -- Found Threads: TRUE  
+[1.392s] -- Found status_interfaces: 0.0.0 (/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_interfaces/share/status_interfaces/cmake)
+[1.445s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.549s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.549s] -- Configured cppcheck include dirs: 
+[1.550s] -- Configured cppcheck exclude dirs and/or files: 
+[1.550s] -- Added test 'lint_cmake' to check CMake code style
+[1.551s] -- Added test 'uncrustify' to check C / C++ code style
+[1.551s] -- Configured uncrustify additional arguments: 
+[1.551s] -- Added test 'xmllint' to check XML markup files
+[1.554s] -- Configuring done
+[1.569s] -- Generating done
+[1.573s] -- Build files have been written to: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/build/status_display
+[1.586s] Invoked command in '/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/build/status_display' returned '0': AMENT_PREFIX_PATH=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/src/status_display -DCMAKE_INSTALL_PREFIX=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display
+[1.588s] Invoking command in '/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/build/status_display': AMENT_PREFIX_PATH=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/build/status_display -- -j4 -l4
+[1.639s] [ 50%] [32mBuilding CXX object CMakeFiles/hello_qt.dir/src/hello_qt.cpp.o[0m
+[1.639s] [ 50%] [32mBuilding CXX object CMakeFiles/sys_status_display.dir/src/sys_status_display.cpp.o[0m
+[2.778s] [ 75%] [32m[1mLinking CXX executable hello_qt[0m
+[3.255s] [ 75%] Built target hello_qt
+[12.911s] [100%] [32m[1mLinking CXX executable sys_status_display[0m
+[14.206s] [100%] Built target sys_status_display
+[14.221s] Invoked command in '/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/build/status_display' returned '0': AMENT_PREFIX_PATH=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/build/status_display -- -j4 -l4
+[14.222s] Invoking command in '/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/build/status_display': AMENT_PREFIX_PATH=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/build/status_display
+[14.236s] -- Install configuration: ""
+[14.236s] -- Installing: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/lib/status_display/hello_qt
+[14.236s] -- Installing: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/lib/status_display/sys_status_display
+[14.240s] -- Set runtime path of "/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/lib/status_display/sys_status_display" to ""
+[14.240s] -- Installing: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/ament_index/resource_index/package_run_dependencies/status_display
+[14.240s] -- Installing: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/ament_index/resource_index/parent_prefix_path/status_display
+[14.240s] -- Installing: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/status_display/environment/ament_prefix_path.sh
+[14.240s] -- Installing: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/status_display/environment/ament_prefix_path.dsv
+[14.240s] -- Installing: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/status_display/environment/path.sh
+[14.240s] -- Installing: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/status_display/environment/path.dsv
+[14.241s] -- Installing: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/status_display/local_setup.bash
+[14.241s] -- Installing: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/status_display/local_setup.sh
+[14.241s] -- Installing: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/status_display/local_setup.zsh
+[14.241s] -- Installing: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/status_display/local_setup.dsv
+[14.242s] -- Installing: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/status_display/package.dsv
+[14.242s] -- Installing: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/ament_index/resource_index/packages/status_display
+[14.242s] -- Installing: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/status_display/cmake/status_displayConfig.cmake
+[14.242s] -- Installing: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/status_display/cmake/status_displayConfig-version.cmake
+[14.242s] -- Installing: /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_display/share/status_display/package.xml
+[14.245s] Invoked command in '/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/build/status_display' returned '0': AMENT_PREFIX_PATH=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lyd/ROS2/chapter3_Topic/topic_practice_ws/install/status_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lyd/ROS2/chapter3_Topic/topic_practice_ws/build/status_display
