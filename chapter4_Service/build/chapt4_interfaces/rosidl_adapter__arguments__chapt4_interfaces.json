@@ -1,0 +1,7 @@
+{
+  "package_name": "chapt4_interfaces",
+  "non_idl_tuples": [
+    "/home/lyd/ROS2/chapter4_Service/Service_ws/src/chapt4_interfaces:srv/FaceDetector.srv",
+    "/home/lyd/ROS2/chapter4_Service/Service_ws/src/chapt4_interfaces:srv/Patrol.srv"
+  ]
+}
