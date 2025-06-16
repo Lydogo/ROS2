@@ -12,12 +12,11 @@ class TurtleController : public rclcpp::Node
 public:
     TurtleController() : Node("turtle_controller")
     {
-        velocity_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>(
-            "/turtle1/cmd_vel", 10);
-        pose_subscription_ = this->create_subscription<turtlesim::msg::Pose>(
-            "/turtle1/pose", 10,
-            std::bind(&TurtleController::on_pose_received_, this, std::placeholders::_1));
-             // 3.创建服务
+    velocity_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel", 10);
+    pose_subscription_ = this->create_subscription<turtlesim::msg::Pose>(
+      "/turtle1/pose", 10,
+        std::bind(&TurtleController::on_pose_received_, this, std::placeholders::_1));
+    // 3.创建服务
     patrol_server_ = this->create_service<Patrol>(
         "patrol",
         [&](const std::shared_ptr<Patrol::Request> request,
@@ -32,30 +31,8 @@ public:
             response->result = Patrol::Response::FAIL;
           }
         });
-            // 声明和获取参数初始值
-    this->declare_parameter("k", 1.0);
-    this->declare_parameter("max_speed", 1.0);
-    this->get_parameter("k", k_);
-    this->get_parameter("max_speed", max_speed_);
+      }
 
-     // 添加参数设置回调
-    parameters_callback_handle_ = this->add_on_set_parameters_callback(
-        [&](const std::vector<rclcpp::Parameter> &params)
-        -> SetParametersResult {
-            // 遍历参数
-            for (auto param : params) {
-                RCLCPP_INFO(this->get_logger(), "更新参数 %s 值为：%f",param.get_name().c_str(), param.as_double());
-                if (param.get_name() == "k") {
-                    k_ = param.as_double();
-                } else if (param.get_name() == "max_speed") {
-                    max_speed_ = param.as_double();
-                }
-            }
-            auto result = SetParametersResult();
-            result.successful = true;
-            return result;
-    });
-    }
 
 private:
     void on_pose_received_(const turtlesim::msg::Pose::SharedPtr pose) {
@@ -102,7 +79,7 @@ private:
     double target_y_{1.0};  // 目标位置Y,设置默认值1.0
     double k_{1.0};         // 比例系数，控制输出=误差*比例系数
     double max_speed_{3.0}; // 最大线速度，设置默认值3.0
-  OnSetParametersCallbackHandle::SharedPtr parameters_callback_handle_;
+  // OnSetParametersCallbackHandle::SharedPtr parameters_callback_handle_;
 
 };
 
@@ -114,3 +91,4 @@ int main(int argc, char **argv)
     rclcpp::shutdown();
     return 0;
 }
+

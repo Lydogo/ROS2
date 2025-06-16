@@ -1,6 +1,6 @@
 import face_recognition
 import cv2
-from ament_index_python.packages import get_package_share_directory
+from ament_index_python.packages import get_package_share_directory #获取功能包share绝对路径
 
 def main():
     # 获取图片真实路径
