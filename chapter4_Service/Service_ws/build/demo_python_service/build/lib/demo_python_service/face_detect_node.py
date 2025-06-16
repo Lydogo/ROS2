@@ -6,7 +6,7 @@ from cv_bridge import CvBridge # 用于图像转换格式
 import cv2
 import face_recognition
 import time
-from rcl_interfaces.msg import SetParametersResult
+from rcl_interfaces.msg import SetParametersResult #参数设置的消息接口
 
 class FaceDetectNode(Node):
     def __init__(self):
@@ -16,17 +16,17 @@ class FaceDetectNode(Node):
         self.defaut_image_path = get_package_share_directory('demo_python_service')+'/resource/default.jpg'
         self.upsample_times = 1
         self.model = "hog"
+        # 声明和获取参数
+        self.declare_parameter('face_locations_upsample_times', 1)
+        self.declare_parameter('face_locations_model', "hog")
+        self.model = self.get_parameter("face_locations_model").value
+        self.upsample_times = self.get_parameter("face_locations_upsample_times").value
+        self.set_parameters([rclpy.Parameter('face_locations_model', rclpy.Parameter.Type.STRING, 'cnn')])
+        self.add_on_set_parameters_callback(self.parameter_callback)
+
         self.get_logger().info('人脸检测服务开始！')
 
-        # # 声明和获取参数
-        # self.declare_parameter('face_locations_upsample_times', 1)
-        # self.declare_parameter('face_locations_model', "hog")
-        # self.model = self.get_parameter("face_locations_model").value
-        # self.upsample_times = self.get_parameter("face_locations_upsample_times").value
-        # self.set_parameters([rclpy.Parameter('face_locations_model', rclpy.Parameter.Type.STRING, 'cnn')])
-        # self.add_on_set_parameters_callback(self.parameter_callback)
-
-    def parameter_callback(self, parameters):
+    def parameter_callback(self, parameters): #订阅参数更新
         for parameter in parameters:
             self.get_logger().info(
                 f'参数 {parameter.name} 设置为：{parameter.value}')
@@ -34,7 +34,7 @@ class FaceDetectNode(Node):
                 self.upsample_times = parameter.value
             if parameter.name == 'face_locations_model':
                 self.mode = parameter.value
-        return SetParametersResult(successful=True)
+        return SetParametersResult(successful=True) 
     
 
     def detect_face_callback(self, request, response):

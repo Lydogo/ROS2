@@ -124,3 +124,20 @@ $ros2 topic pub /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.5, y: 0
 pub:表示发布
 /turtle1/cmd_vel：话题名字
 geometry_msgs/msg/Twist：消息接口
+
+# 4.1服务
+
+在 ROS 2（Robot Operating System 2） 中，服务（Service） 是一种基于 请求-响应（Request-Response） 模型的通信机制，允许节点（Nodes）之间进行同步交互。服务由 服务端（Server） 和 客户端（Client） 组成：
+
+## 服务端
+服务端是 响应请求 的一方，它：监听 某个服务（Service）的请求。收到请求后，执行 回调函数 处理请求，并返回 响应（Response）。
+
+## 客户端
+客户端是 发起请求 的一方，它：向服务端 发送请求（Request） 并 等待响应（Response）。可以是 同步（阻塞） 或 异步（非阻塞） 调用。
+
+## 参数设置
+运行节点时单独设置参数
+ros2 run demo_python_service face_detect_node --ros-args -p model:=cnn
+
+请求端参数设置
+ros2 param set /face_detect_node face_locations_upsample_times 2
