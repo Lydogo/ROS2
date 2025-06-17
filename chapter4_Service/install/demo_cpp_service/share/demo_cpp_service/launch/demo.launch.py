@@ -1,7 +1,7 @@
 import launch
-import launch_ros
+import launch_ros #launch需要的两个库
 
-def generate_launch_description():
+def generate_launch_description(): #名字固定，产生launch的描述
     action_declare_arg_max_spped = launch.actions.DeclareLaunchArgument('launch_max_speed', default_value='2.0')
 
     action_node_turtle_control = launch_ros.actions.Node(
@@ -29,4 +29,4 @@ def generate_launch_description():
         action_node_patrol_client,
         action_node_turtlesim_node
     ])
-    return launch_description
+    return launch_description #返回值也固定，执行动作

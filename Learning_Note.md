@@ -141,3 +141,12 @@ ros2 run demo_python_service face_detect_node --ros-args -p model:=cnn
 
 请求端参数设置
 ros2 param set /face_detect_node face_locations_upsample_times 2
+
+# 4.6使用launch启动脚本
+ros2 launch demo_cpp_service demo.launch.py 
+
+## launch三大组件：动作、条件、替换
+动作：除了是一个节点外，还可以是一句打印，一段终端指令，甚至是另一个launch文件
+替换：使用launch的参数替换节点的参数值
+ros2 launch demo_cpp_service demo.launch.py launch_max_speed:=5.0
+条件：决定哪些动作是否启动

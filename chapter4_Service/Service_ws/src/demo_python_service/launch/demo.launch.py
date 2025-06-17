@@ -2,8 +2,10 @@ import launch
 import launch_ros
 
 def generate_launch_description():
+    #1.声明一个launch参数
     action_declare_arg_max_spped = launch.actions.DeclareLaunchArgument('launch_max_speed', default_value='2.0')
 
+    #2.把launch的参数手动传递给某个节点
     action_node_turtle_control = launch_ros.actions.Node(
         package='demo_cpp_service',
         executable="turtle_control",
