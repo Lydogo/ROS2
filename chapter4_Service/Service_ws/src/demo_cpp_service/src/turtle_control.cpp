@@ -12,25 +12,53 @@ class TurtleController : public rclcpp::Node
 public:
     TurtleController() : Node("turtle_controller")
     {
-    velocity_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel", 10);
-    pose_subscription_ = this->create_subscription<turtlesim::msg::Pose>(
-      "/turtle1/pose", 10,
-        std::bind(&TurtleController::on_pose_received_, this, std::placeholders::_1));
-    // 3.创建服务
-    patrol_server_ = this->create_service<Patrol>(
-        "patrol",
-        [&](const std::shared_ptr<Patrol::Request> request,
-            std::shared_ptr<Patrol::Response> response) -> void {
-          // 判断巡逻点是否在模拟器边界内
-          if ((0 < request->target_x && request->target_x < 12.0f)
-           && (0 < request->target_y && request->target_y < 12.0f)) {
-            target_x_ = request->target_x;
-            target_y_ = request->target_y;
-            response->result = Patrol::Response::SUCCESS;
-          }else{
-            response->result = Patrol::Response::FAIL;
-          }
-        });
+      this->declare_parameter("k",1.0);
+      this->declare_parameter("max_speed",1.0);
+      this->get_parameter("k",k_);
+      this->get_parameter("max_speed",max_speed_);
+      this->set_parameter(rclcpp::Parameter("k",2.0));
+
+      parameter_callback_handle_ = this->add_on_set_parameters_callback(
+          [&](const std::vector<rclcpp::Parameter> &parameters) -> rcl_interfaces::msg::SetParametersResult
+          {
+            rcl_interfaces::msg::SetParametersResult result;
+            result.successful = true;
+            for (const auto &parameter : parameters)
+            {
+              RCLCPP_INFO(this->get_logger(),"更新参数的值%s=%f",parameter.get_name().c_str(),parameter.as_double());
+              if(parameter.get_name()=="k")
+              {
+                k_=parameter.as_double();
+              }
+              if(parameter.get_name()=="max_speed")
+              {
+                max_speed_=parameter.as_double();
+              }              
+            }
+            return result;
+          });
+      velocity_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel", 10);
+      pose_subscription_ = this->create_subscription<turtlesim::msg::Pose>(
+          "/turtle1/pose", 10,
+          std::bind(&TurtleController::on_pose_received_, this, std::placeholders::_1));
+      // 3.创建服务
+      patrol_server_ = this->create_service<Patrol>(
+          "patrol",
+          [&](const std::shared_ptr<Patrol::Request> request,
+              std::shared_ptr<Patrol::Response> response) -> void
+          {
+            // 判断巡逻点是否在模拟器边界内
+            if ((0 < request->target_x && request->target_x < 12.0f) && (0 < request->target_y && request->target_y < 12.0f))
+            {
+              target_x_ = request->target_x;
+              target_y_ = request->target_y;
+              response->result = Patrol::Response::SUCCESS;
+            }
+            else
+            {
+              response->result = Patrol::Response::FAIL;
+            }
+          });
       }
 
 
@@ -70,15 +98,16 @@ private:
 
 
 private:
+
+  OnSetParametersCallbackHandle::SharedPtr parameter_callback_handle_;
   // 2.添加 Patrol 类型服务共享指针 patrol_server_ 为成员变量
   rclcpp::Service<Patrol>::SharedPtr patrol_server_;
-
-    rclcpp::Subscription<turtlesim::msg::Pose>::SharedPtr pose_subscription_;
-    rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr velocity_publisher_;
-    double target_x_{1.0};  // 目标位置X,设置默认值1.0
-    double target_y_{1.0};  // 目标位置Y,设置默认值1.0
-    double k_{1.0};         // 比例系数，控制输出=误差*比例系数
-    double max_speed_{3.0}; // 最大线速度，设置默认值3.0
+  rclcpp::Subscription<turtlesim::msg::Pose>::SharedPtr pose_subscription_;
+  rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr velocity_publisher_;
+  double target_x_{1.0};  // 目标位置X,设置默认值1.0
+  double target_y_{1.0};  // 目标位置Y,设置默认值1.0
+  double k_{1.0};         // 比例系数，控制输出=误差*比例系数
+  double max_speed_{3.0}; // 最大线速度，设置默认值3.0
   // OnSetParametersCallbackHandle::SharedPtr parameters_callback_handle_;
 
 };

@@ -60,75 +60,77 @@ public:
         });
   }
 
+/*
+创建客户端发送请求
+*/
+  SetP::Response::SharedPtr call_set_parameter(rcl_interfaces::msg::Parameter &param)
+  {
+    auto param_client = this->create_client<SetP>("/turtle_controller/set_parameters"); //与服务端保持一致
+
+    // 1.等待服务端上线
+    while (!param_client->wait_for_service(1s))
+    {
+      // 等待时检测rclcpp的状态
+      if (!rclcpp::ok())
+      {
+        RCLCPP_ERROR(this->get_logger(), "等待服务的过程中被打断...");
+        return nullptr;
+      }
+      RCLCPP_INFO(this->get_logger(), "等待服务端上线中");
+    }
+    // 2.构造请求的
+    auto request = std::make_shared<SetP::Request>();
+    request->parameters.push_back(param);
+
+    // 3.发送异步请求，然后等待返回，返回时调用回调函数
+    auto future = param_client->async_send_request(request);
+    rclcpp::spin_until_future_complete(this->get_node_base_interface(),future);
+    auto response = future.get();
+    return response;
+  }
+
+/*
+更新参数k
+*/
+  void update_server_param_k(double k)
+  {
+    //1.创建参数对象
+    auto param = rcl_interfaces::msg::Parameter();
+    param.name = "k";
+
+    //2.创建参数值
+    auto param_value = rcl_interfaces::msg::ParameterValue();
+    param_value.type = rcl_interfaces::msg::ParameterType::PARAMETER_DOUBLE;
+    param_value.double_value=k;
+    param.value=param_value;
+
+    //3.请求更新参数并处理
+    auto response = this->call_set_parameter(param);
+    if(response==NULL){
+      RCLCPP_INFO(this->get_logger(),"参数更新失败");
+      return;
+    }
+    for(auto result:response->results)
+      if(result.successful==false){
+      RCLCPP_INFO(this->get_logger(),"参数更新失败,原因：%s",result.reason.c_str());
+      }
+      else{
+      RCLCPP_INFO(this->get_logger(),"参数更新成功");
+      }
+    }
+
 private:
   rclcpp::TimerBase::SharedPtr timer_;
   rclcpp::Client<Patrol>::SharedPtr patrol_client_;
 };
+
+
 int main(int argc, char **argv)
 {
   rclcpp::init(argc, argv);
   auto node = std::make_shared<PatrolClient>();
+  node->update_server_param_k(4);
   rclcpp::spin(node);
   rclcpp::shutdown();
   return 0;
 }
-
-
-  // void update_server_param_k(double k)
-  // {
-  //   // 1.创建一个参数对象
-  //   auto param = rcl_interfaces::msg::Parameter();
-  //   param.name = "k";
-  //   // 2.创建参数值对象并赋值
-  //   auto param_value = rcl_interfaces::msg::ParameterValue();
-  //   param_value.type = rcl_interfaces::msg::ParameterType::PARAMETER_DOUBLE;
-  //   param_value.double_value = k;
-  //   param.value = param_value;
-  //   // 3.请求更新参数并处理
-  //   auto response = call_set_parameters(param);
-  //   if (response == nullptr)
-  //   {
-  //     RCLCPP_WARN(this->get_logger(), "参数修改失败");
-  //     return;
-  //   }
-  //   else
-  //   {
-  //     for (auto result : response->results)
-  //     {
-  //       if (result.successful)
-  //       {
-  //         RCLCPP_INFO(this->get_logger(), "参数k 已修改为：%f", k);
-  //       }
-  //       else
-  //       {
-  //         RCLCPP_WARN(this->get_logger(), "参数k 失败原因：%s", result.reason.c_str());
-  //       }
-  //     }
-  //   }
-  // }
-
-  // std::shared_ptr<SetP::Response> call_set_parameters(
-  //     rcl_interfaces::msg::Parameter &parameter)
-  // {
-  //   // 1. 创建客户端等待服务上线
-  //   auto param_client = this->create_client<SetP>(
-  //       "/turtle_controller/set_parameters");
-  //   while (!param_client->wait_for_service(std::chrono::seconds(1)))
-  //   {
-  //     if (!rclcpp::ok())
-  //     {
-  //       RCLCPP_ERROR(this->get_logger(), "等待服务的过程中被打断...");
-  //       return nullptr;
-  //     }
-  //     RCLCPP_INFO(this->get_logger(), "等待参数设置服务端上线中");
-  //   }
-  //   // 2. 创建请求对象
-  //   auto request =
-  //       std::make_shared<SetP::Request>();
-  //   request->parameters.push_back(parameter);
-  //   // 3. 异步调用、等待并返回响应结果
-  //   auto future = param_client->async_send_request(request);
-  //   rclcpp::spin_until_future_complete(this->get_node_base_interface(), future);
-  //   auto response = future.get();
-  //   return response;
-  // }
