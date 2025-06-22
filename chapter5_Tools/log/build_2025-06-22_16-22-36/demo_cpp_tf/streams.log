@@ -1,0 +1,33 @@
+[0.015s] Invoking command in '/home/lyd/ROS2/chapter5_Tools/build/demo_cpp_tf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lyd/ROS2/chapter5_Tools/install/demo_python_tf:/opt/ros/humble /usr/bin/cmake --build /home/lyd/ROS2/chapter5_Tools/build/demo_cpp_tf -- -j4 -l4
+[0.070s] [35m[1mConsolidate compiler generated dependencies of target tf_listener[0m
+[0.074s] [ 16%] [32mBuilding CXX object CMakeFiles/dynamic_tf_broadcaster.dir/src/dynamic_tf_broadcaster.cpp.o[0m
+[0.089s] [ 33%] [32mBuilding CXX object CMakeFiles/static_tf_broadcaster.dir/src/static_tf_broadcaster.cpp.o[0m
+[0.103s] [ 66%] Built target tf_listener
+[3.808s] [ 83%] [32m[1mLinking CXX executable dynamic_tf_broadcaster[0m
+[3.829s] [100%] [32m[1mLinking CXX executable static_tf_broadcaster[0m
+[4.031s] [100%] Built target dynamic_tf_broadcaster
+[4.040s] [100%] Built target static_tf_broadcaster
+[4.052s] Invoked command in '/home/lyd/ROS2/chapter5_Tools/build/demo_cpp_tf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lyd/ROS2/chapter5_Tools/install/demo_python_tf:/opt/ros/humble /usr/bin/cmake --build /home/lyd/ROS2/chapter5_Tools/build/demo_cpp_tf -- -j4 -l4
+[4.060s] Invoking command in '/home/lyd/ROS2/chapter5_Tools/build/demo_cpp_tf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lyd/ROS2/chapter5_Tools/install/demo_python_tf:/opt/ros/humble /usr/bin/cmake --install /home/lyd/ROS2/chapter5_Tools/build/demo_cpp_tf
+[4.068s] -- Install configuration: ""
+[4.068s] -- Up-to-date: /home/lyd/ROS2/chapter5_Tools/install/demo_cpp_tf/lib/demo_cpp_tf/tf_listener
+[4.068s] -- Installing: /home/lyd/ROS2/chapter5_Tools/install/demo_cpp_tf/lib/demo_cpp_tf/static_tf_broadcaster
+[4.069s] -- Set runtime path of "/home/lyd/ROS2/chapter5_Tools/install/demo_cpp_tf/lib/demo_cpp_tf/static_tf_broadcaster" to ""
+[4.070s] -- Installing: /home/lyd/ROS2/chapter5_Tools/install/demo_cpp_tf/lib/demo_cpp_tf/dynamic_tf_broadcaster
+[4.072s] -- Set runtime path of "/home/lyd/ROS2/chapter5_Tools/install/demo_cpp_tf/lib/demo_cpp_tf/dynamic_tf_broadcaster" to ""
+[4.073s] -- Up-to-date: /home/lyd/ROS2/chapter5_Tools/install/demo_cpp_tf/share/ament_index/resource_index/package_run_dependencies/demo_cpp_tf
+[4.074s] -- Up-to-date: /home/lyd/ROS2/chapter5_Tools/install/demo_cpp_tf/share/ament_index/resource_index/parent_prefix_path/demo_cpp_tf
+[4.074s] -- Up-to-date: /home/lyd/ROS2/chapter5_Tools/install/demo_cpp_tf/share/demo_cpp_tf/environment/ament_prefix_path.sh
+[4.074s] -- Up-to-date: /home/lyd/ROS2/chapter5_Tools/install/demo_cpp_tf/share/demo_cpp_tf/environment/ament_prefix_path.dsv
+[4.074s] -- Up-to-date: /home/lyd/ROS2/chapter5_Tools/install/demo_cpp_tf/share/demo_cpp_tf/environment/path.sh
+[4.074s] -- Up-to-date: /home/lyd/ROS2/chapter5_Tools/install/demo_cpp_tf/share/demo_cpp_tf/environment/path.dsv
+[4.074s] -- Up-to-date: /home/lyd/ROS2/chapter5_Tools/install/demo_cpp_tf/share/demo_cpp_tf/local_setup.bash
+[4.074s] -- Up-to-date: /home/lyd/ROS2/chapter5_Tools/install/demo_cpp_tf/share/demo_cpp_tf/local_setup.sh
+[4.074s] -- Up-to-date: /home/lyd/ROS2/chapter5_Tools/install/demo_cpp_tf/share/demo_cpp_tf/local_setup.zsh
+[4.074s] -- Up-to-date: /home/lyd/ROS2/chapter5_Tools/install/demo_cpp_tf/share/demo_cpp_tf/local_setup.dsv
+[4.074s] -- Installing: /home/lyd/ROS2/chapter5_Tools/install/demo_cpp_tf/share/demo_cpp_tf/package.dsv
+[4.074s] -- Up-to-date: /home/lyd/ROS2/chapter5_Tools/install/demo_cpp_tf/share/ament_index/resource_index/packages/demo_cpp_tf
+[4.074s] -- Up-to-date: /home/lyd/ROS2/chapter5_Tools/install/demo_cpp_tf/share/demo_cpp_tf/cmake/demo_cpp_tfConfig.cmake
+[4.074s] -- Up-to-date: /home/lyd/ROS2/chapter5_Tools/install/demo_cpp_tf/share/demo_cpp_tf/cmake/demo_cpp_tfConfig-version.cmake
+[4.074s] -- Up-to-date: /home/lyd/ROS2/chapter5_Tools/install/demo_cpp_tf/share/demo_cpp_tf/package.xml
+[4.078s] Invoked command in '/home/lyd/ROS2/chapter5_Tools/build/demo_cpp_tf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lyd/ROS2/chapter5_Tools/install/demo_python_tf:/opt/ros/humble /usr/bin/cmake --install /home/lyd/ROS2/chapter5_Tools/build/demo_cpp_tf

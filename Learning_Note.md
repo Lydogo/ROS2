@@ -150,3 +150,12 @@ ros2 launch demo_cpp_service demo.launch.py
 替换：使用launch的参数替换节点的参数值
 ros2 launch demo_cpp_service demo.launch.py launch_max_speed:=5.0
 条件：决定哪些动作是否启动
+
+# 5 坐标变换工具
+## 5.1 使用命令行使用TF
+创建坐标系：
+ros2 run tf2_ros static_transform_publisher --x 0.1 --y 0.0 --z 0.2 --roll 0.0 --pitch 0.0 --yaw 0.0 --frame-id base_link --child-frame-id base_laser
+查询关系：
+ros2 run tf2_ros tf2_echo base_link wall_point
+查看TF树：
+ros2 run tf2_tools view_frames
