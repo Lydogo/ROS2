@@ -114,13 +114,14 @@ public:
 # 3.1 话题
 
 ## 查看话题消息接口
-$ros2 topic info /turtle1/cmd_vel
+    $ros2 topic info /turtle1/cmd_vel
+
 
 ## 消息接口详细定义
-$ros2 interface show geometry_msgs/msg/Twist
+    $ros2 interface show geometry_msgs/msg/Twist
 
 ## 发布
-$ros2 topic pub /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.5, y: 0.0} , angular: {z: 0.0}}"
+    $ros2 topic pub /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.5, y: 0.0} , angular: {z: 0.0}}"
 pub:表示发布
 /turtle1/cmd_vel：话题名字
 geometry_msgs/msg/Twist：消息接口
@@ -154,8 +155,30 @@ ros2 launch demo_cpp_service demo.launch.py launch_max_speed:=5.0
 # 5 坐标变换工具
 ## 5.1 使用命令行使用TF
 创建坐标系：
-ros2 run tf2_ros static_transform_publisher --x 0.1 --y 0.0 --z 0.2 --roll 0.0 --pitch 0.0 --yaw 0.0 --frame-id base_link --child-frame-id base_laser
+
+    ros2 run tf2_ros static_transform_publisher --x 0.1 --y 0.0 --z 0.2 --roll 0.0 --pitch 0.0 --yaw 0.0 --frame-id base_link --child-frame-id base_laser
+
 查询关系：
-ros2 run tf2_ros tf2_echo base_link wall_point
+
+    ros2 run tf2_ros tf2_echo base_link wall_point
+
 查看TF树：
-ros2 run tf2_tools view_frames
+
+    ros2 run tf2_tools view_frames
+
+
+
+# 6.仿真
+
+## 6.1 使用urdf创建机器人
+urdf_to_graphviz first_robot.urdf
+
+
+## 查看所有的硬件接口 
+ros2 control list_hardware_interfaces 
+
+## 查看所有硬件组件
+ros2 control list_hardware_components
+
+## 使用键盘控制
+ros2 run teleop_twist_keyboard teleop_twist_keyboard 

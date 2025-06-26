@@ -1,0 +1,25 @@
+[0.015s] Invoking command in '/home/lyd/ROS2/chapter6_Simulation/chapt6_ws/build/demo_cpp_topic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lyd/ROS2/chapter6_Simulation/chapt6_ws/build/demo_cpp_topic -- -j4 -l4
+[0.118s] [ 50%] [32mBuilding CXX object CMakeFiles/circle_motion.dir/src/CircleMotion.cpp.o[0m
+[3.618s] [100%] [32m[1mLinking CXX executable circle_motion[0m
+[3.773s] [100%] Built target circle_motion
+[3.792s] Invoked command in '/home/lyd/ROS2/chapter6_Simulation/chapt6_ws/build/demo_cpp_topic' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lyd/ROS2/chapter6_Simulation/chapt6_ws/build/demo_cpp_topic -- -j4 -l4
+[3.793s] Invoking command in '/home/lyd/ROS2/chapter6_Simulation/chapt6_ws/build/demo_cpp_topic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lyd/ROS2/chapter6_Simulation/chapt6_ws/build/demo_cpp_topic
+[3.798s] -- Install configuration: ""
+[3.798s] -- Installing: /home/lyd/ROS2/chapter6_Simulation/chapt6_ws/install/demo_cpp_topic/lib/demo_cpp_topic/circle_motion
+[3.799s] -- Set runtime path of "/home/lyd/ROS2/chapter6_Simulation/chapt6_ws/install/demo_cpp_topic/lib/demo_cpp_topic/circle_motion" to ""
+[3.799s] -- Up-to-date: /home/lyd/ROS2/chapter6_Simulation/chapt6_ws/install/demo_cpp_topic/share/ament_index/resource_index/package_run_dependencies/demo_cpp_topic
+[3.799s] -- Up-to-date: /home/lyd/ROS2/chapter6_Simulation/chapt6_ws/install/demo_cpp_topic/share/ament_index/resource_index/parent_prefix_path/demo_cpp_topic
+[3.799s] -- Up-to-date: /home/lyd/ROS2/chapter6_Simulation/chapt6_ws/install/demo_cpp_topic/share/demo_cpp_topic/environment/ament_prefix_path.sh
+[3.799s] -- Up-to-date: /home/lyd/ROS2/chapter6_Simulation/chapt6_ws/install/demo_cpp_topic/share/demo_cpp_topic/environment/ament_prefix_path.dsv
+[3.799s] -- Up-to-date: /home/lyd/ROS2/chapter6_Simulation/chapt6_ws/install/demo_cpp_topic/share/demo_cpp_topic/environment/path.sh
+[3.799s] -- Up-to-date: /home/lyd/ROS2/chapter6_Simulation/chapt6_ws/install/demo_cpp_topic/share/demo_cpp_topic/environment/path.dsv
+[3.799s] -- Up-to-date: /home/lyd/ROS2/chapter6_Simulation/chapt6_ws/install/demo_cpp_topic/share/demo_cpp_topic/local_setup.bash
+[3.799s] -- Up-to-date: /home/lyd/ROS2/chapter6_Simulation/chapt6_ws/install/demo_cpp_topic/share/demo_cpp_topic/local_setup.sh
+[3.800s] -- Up-to-date: /home/lyd/ROS2/chapter6_Simulation/chapt6_ws/install/demo_cpp_topic/share/demo_cpp_topic/local_setup.zsh
+[3.800s] -- Up-to-date: /home/lyd/ROS2/chapter6_Simulation/chapt6_ws/install/demo_cpp_topic/share/demo_cpp_topic/local_setup.dsv
+[3.800s] -- Installing: /home/lyd/ROS2/chapter6_Simulation/chapt6_ws/install/demo_cpp_topic/share/demo_cpp_topic/package.dsv
+[3.800s] -- Up-to-date: /home/lyd/ROS2/chapter6_Simulation/chapt6_ws/install/demo_cpp_topic/share/ament_index/resource_index/packages/demo_cpp_topic
+[3.800s] -- Up-to-date: /home/lyd/ROS2/chapter6_Simulation/chapt6_ws/install/demo_cpp_topic/share/demo_cpp_topic/cmake/demo_cpp_topicConfig.cmake
+[3.801s] -- Up-to-date: /home/lyd/ROS2/chapter6_Simulation/chapt6_ws/install/demo_cpp_topic/share/demo_cpp_topic/cmake/demo_cpp_topicConfig-version.cmake
+[3.801s] -- Up-to-date: /home/lyd/ROS2/chapter6_Simulation/chapt6_ws/install/demo_cpp_topic/share/demo_cpp_topic/package.xml
+[3.804s] Invoked command in '/home/lyd/ROS2/chapter6_Simulation/chapt6_ws/build/demo_cpp_topic' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lyd/ROS2/chapter6_Simulation/chapt6_ws/build/demo_cpp_topic
