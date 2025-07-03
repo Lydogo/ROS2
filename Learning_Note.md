@@ -182,3 +182,24 @@ ros2 control list_hardware_components
 
 ## 使用键盘控制
 ros2 run teleop_twist_keyboard teleop_twist_keyboard 
+
+# 7.导航
+
+## 启动slam功能
+ros2 launch slam_toolbox online_async_launch.py use_sim_time:=True
+
+## 优化导航速度
+nav2_params.yaml ：controller_server
+
+## 优化膨胀半径
+nav2_params.yaml ：local_costmap ：inflation_radius
+
+## 优化机器人到点精度
+nav2_params.yaml ：general_goal_checker
+xy_goal_tolerance
+
+## 通过话题初始化机器人位置
+ros2 topic pub /initialpose geometry_msgs/msg/PoseWithCovarianceStamped "{header: {frame_id: map}}" --once
+
+## 把参数输出到yaml格式文件
+ros2 param dump /patrol_node
