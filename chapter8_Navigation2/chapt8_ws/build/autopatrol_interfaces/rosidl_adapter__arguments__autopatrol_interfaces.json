@@ -1,0 +1,6 @@
+{
+  "package_name": "autopatrol_interfaces",
+  "non_idl_tuples": [
+    "/home/lyd/ROS2/chapter8_Navigation2/chapt8_ws/src/autopatrol_interfaces:srv/SpeechText.srv"
+  ]
+}

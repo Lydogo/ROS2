@@ -1,0 +1,64 @@
+[0.010s] Invoking command in '/home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/build/motion_control_system': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/src/motion_control_system -DCMAKE_INSTALL_PREFIX=/home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/install/motion_control_system
+[0.090s] -- The C compiler identification is GNU 11.4.0
+[0.165s] -- The CXX compiler identification is GNU 11.4.0
+[0.176s] -- Detecting C compiler ABI info
+[0.234s] -- Detecting C compiler ABI info - done
+[0.238s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.238s] -- Detecting C compile features
+[0.239s] -- Detecting C compile features - done
+[0.242s] -- Detecting CXX compiler ABI info
+[0.309s] -- Detecting CXX compiler ABI info - done
+[0.315s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.316s] -- Detecting CXX compile features
+[0.316s] -- Detecting CXX compile features - done
+[0.323s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.462s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.556s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[0.597s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.674s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.674s] -- Configured cppcheck include dirs: /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/src/motion_control_system/include
+[0.675s] -- Configured cppcheck exclude dirs and/or files: 
+[0.675s] -- Added test 'lint_cmake' to check CMake code style
+[0.677s] -- Added test 'uncrustify' to check C / C++ code style
+[0.677s] -- Configured uncrustify additional arguments: 
+[0.678s] -- Added test 'xmllint' to check XML markup files
+[0.680s] -- Configuring done
+[0.686s] -- Generating done
+[0.688s] -- Build files have been written to: /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/build/motion_control_system
+[0.696s] Invoked command in '/home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/build/motion_control_system' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/src/motion_control_system -DCMAKE_INSTALL_PREFIX=/home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/install/motion_control_system
+[0.696s] Invoking command in '/home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/build/motion_control_system': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/build/motion_control_system -- -j4 -l4
+[0.740s] [ 25%] [32mBuilding CXX object CMakeFiles/spin_motion_controller.dir/src/spin_motion_controller.cpp.o[0m
+[0.744s] [ 50%] [32mBuilding CXX object CMakeFiles/test_plugin.dir/src/test_plugin.cpp.o[0m
+[1.217s] [ 75%] [32m[1mLinking CXX shared library libspin_motion_controller.so[0m
+[1.303s] [ 75%] Built target spin_motion_controller
+[3.095s] [100%] [32m[1mLinking CXX executable test_plugin[0m
+[3.207s] [100%] Built target test_plugin
+[3.216s] Invoked command in '/home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/build/motion_control_system' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/build/motion_control_system -- -j4 -l4
+[3.223s] Invoking command in '/home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/build/motion_control_system': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/build/motion_control_system
+[3.228s] -- Install configuration: ""
+[3.228s] -- Installing: /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/install/motion_control_system/lib/motion_control_system/test_plugin
+[3.229s] -- Set runtime path of "/home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/install/motion_control_system/lib/motion_control_system/test_plugin" to ""
+[3.229s] -- Installing: /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/install/motion_control_system/lib/libspin_motion_controller.so
+[3.229s] -- Set runtime path of "/home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/install/motion_control_system/lib/libspin_motion_controller.so" to ""
+[3.229s] -- Installing: /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/install/motion_control_system/include/
+[3.229s] -- Installing: /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/install/motion_control_system/include//motion_control_system
+[3.229s] -- Installing: /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/install/motion_control_system/include//motion_control_system/motion_control_interface.hpp
+[3.229s] -- Installing: /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/install/motion_control_system/include//motion_control_system/spin_motion_controller.hpp
+[3.230s] -- Installing: /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/install/motion_control_system/share/motion_control_system/spin_motion_plugins.xml
+[3.230s] -- Installing: /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/install/motion_control_system/share/ament_index/resource_index/package_run_dependencies/motion_control_system
+[3.230s] -- Installing: /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/install/motion_control_system/share/ament_index/resource_index/parent_prefix_path/motion_control_system
+[3.230s] -- Installing: /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/install/motion_control_system/share/motion_control_system/environment/ament_prefix_path.sh
+[3.230s] -- Installing: /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/install/motion_control_system/share/motion_control_system/environment/ament_prefix_path.dsv
+[3.230s] -- Installing: /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/install/motion_control_system/share/motion_control_system/environment/path.sh
+[3.230s] -- Installing: /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/install/motion_control_system/share/motion_control_system/environment/path.dsv
+[3.230s] -- Installing: /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/install/motion_control_system/share/motion_control_system/local_setup.bash
+[3.230s] -- Installing: /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/install/motion_control_system/share/motion_control_system/local_setup.sh
+[3.230s] -- Installing: /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/install/motion_control_system/share/motion_control_system/local_setup.zsh
+[3.231s] -- Installing: /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/install/motion_control_system/share/motion_control_system/local_setup.dsv
+[3.231s] -- Installing: /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/install/motion_control_system/share/motion_control_system/package.dsv
+[3.231s] -- Installing: /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/install/motion_control_system/share/ament_index/resource_index/packages/motion_control_system
+[3.231s] -- Installing: /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/install/motion_control_system/share/ament_index/resource_index/motion_control_system__pluginlib__plugin/motion_control_system
+[3.231s] -- Installing: /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/install/motion_control_system/share/motion_control_system/cmake/motion_control_systemConfig.cmake
+[3.231s] -- Installing: /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/install/motion_control_system/share/motion_control_system/cmake/motion_control_systemConfig-version.cmake
+[3.231s] -- Installing: /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/install/motion_control_system/share/motion_control_system/package.xml
+[3.233s] Invoked command in '/home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/build/motion_control_system' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lyd/ROS2/chapter8_Navigation2/learn_pluginlib/build/motion_control_system

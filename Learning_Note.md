@@ -203,3 +203,22 @@ ros2 topic pub /initialpose geometry_msgs/msg/PoseWithCovarianceStamped "{header
 
 ## 把参数输出到yaml格式文件
 ros2 param dump /patrol_node
+
+# 8.导航进阶
+
+## 定义插件抽象类
+
+### 1.什么是抽象类？
+抽象类是指包含至少一个纯虚函数（Pure Virtual Function）的类，它不能被实例化（不能创建对象），只能作为基类被继承。
+
+### 2.为什么需要抽象类？
+定义接口规范：强制所有运动控制器都必须实现start()和stop()方法
+多态基础：通过基类指针/引用调用不同子类的实现
+防止误用：避免直接实例化没有实际意义的基类
+
+## 自定义规划器
+三个基本概念：位置、路径、占据栅格地图
+ros2 interface show nav_msgs/msg/Path
+ros2 interface show geometry_msgs/msg/PoseStamped
+ros2 interface show nav_msgs/msg/OccupancyGrid
+需要坐标转换
