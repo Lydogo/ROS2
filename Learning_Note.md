@@ -222,3 +222,15 @@ ros2 interface show nav_msgs/msg/Path
 ros2 interface show geometry_msgs/msg/PoseStamped
 ros2 interface show nav_msgs/msg/OccupancyGrid
 需要坐标转换
+
+
+
+
+# 项目实操
+## amcl
+amcl主要功能是提供map和odom的tf变换，当机器人位置变化时，判断机器人在map坐标系上的位置。除此之外amcl中包括使用激光雷达等加上odom里程计的作用，以提高精度。
+## 怎么替换？
+主要是发布tf变换再加一个初始位置
+
+一些bug：
+把odom-base_footprint的发布成了静态，应该使用动态，而且里程计会发布这个关系
